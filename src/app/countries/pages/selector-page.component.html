@@ -1,1 +1,48 @@
 <h1 class="text-center text-body-secondary">Selectores</h1>
+<hr />
+<!-- Region -->
+<form [formGroup]="myForm">
+  <div class="row mb-3">
+    <div class="col">
+      <label class="form-label"> Continenete: </label>
+      <select formControlName="region" class="form-control">
+        <option value="" class="value">-- Seleccione Contienete --</option>
+        <option *ngFor="let i of regions" [value]="i">{{ i }}</option>
+      </select>
+    </div>
+  </div>
+  <!-- Countries -->
+  <div class="row mb-3" *ngIf="countriesByRegion.length > 0">
+    <div class="col">
+      <label class="form-label"> Pais: </label>
+      <select formControlName="country" class="form-control">
+        <option value="" class="value">-- Seleccione un Pais --</option>
+        <option
+          *ngFor="let country of countriesByRegion"
+          [value]="country.cca3"
+        >
+          {{ country.name }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Fronteras -->
+  <div class="row mb-3" *ngIf="borders.length > 0">
+    <div class="col">
+      <label class="form-label"> Fronteras: </label>
+      <select formControlName="borders" class="form-control">
+        <option value="" class="value">--Seleccione la frontera --</option>
+        <option *ngFor="let border of borders" [value]="border.cca3">
+          {{ border.name }}
+        </option>
+      </select>
+    </div>
+  </div>
+</form>
+
+<h3>Formulario</h3>
+<code>
+  {{ myForm.value | json }}
+</code>
+<p>is form valid: {{ myForm.valid }}</p>
