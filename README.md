@@ -1,27 +1,30 @@
-# FormAppSelectores
+<p align="center"> 
+ <img src="src/assets/form.png" width="6%">
+</p>
+<p align="center"> 
+<img src="https://readme-typing-svg.demolab.com?font=Pixel Emulator&size=40&color=DD0031&center=true&vCenter=true&width=940&lines= FormAppSelectores" align="middle" alt=""  width="80%"/>
+</p>
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+##  🐦Development server
 
-## Code scaffolding
+Ejecutar `ng serve` ó `ng s -o`para un servidor de desarrollo. Navegue a `http://localhost:4200/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## 🛠 Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## 🧩 Resumen de lo que he aprendido en esta sección
+El objetivo de la sección básicamente es aprender a reaccionar cuando información de un formulario cambia, en este caso haremos:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ 1. ### Selectores anidados
 
-## Running end-to-end tests
+ 2. ### Llenar selectores desde peticiones HTTP
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ 3. ### Encadenamiento de operadores de RXJS
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ 4. ### Explicar el por qué la gente dice que TypeScript no es del todo "Type Safe"
